@@ -1,0 +1,131 @@
+<h1>Tipos de Imagens: Vetores e Bitmaps</h1>
+
+<p>Existem dois grandes universos no design e na computação gráfica:
+    <strong>imagens vetoriais</strong> e <strong>imagens bitmap</strong>.
+    Cada um segue princípios diferentes de construção,
+    e entender isso é essencial para escolher a forma certa de trabalhar em cada projeto.
+</p>
+
+
+<h2>Imagens Vetoriais</h2>
+<section>
+    <figure class="w50">
+        <img src="contents/assets/grafico-vetorial.svg" alt="Gráfico Vetorial aplicado ao Plano Cartesiano">
+        <figcaption>Gráfico Vetorial aplicado ao Plano Cartesiano</figcaption>
+    </figure>
+    <div class="text w50">
+        <p>Imagens vetoriais não são feitas de pixels, mas de fórmulas matemáticas.
+            Cada linha, curva ou forma é descrita por equações baseadas em coordenadas no <strong>plano
+                cartesiano</strong>.</p>
+
+        <p>Em vez de armazenar “pontos coloridos”, o vetor armazena instruções como:
+            “desenhar uma linha do ponto (0,0) ao ponto (100,200)” ou
+            “criar um círculo com raio 50 na posição (150,150)”.</p>
+
+        <p>Essas informações são interpretadas pelo software e renderizadas em tempo real,
+            permitindo que a imagem seja ampliada ou reduzida infinitamente sem perda de qualidade.</p>
+
+        <ul>
+            <li><strong>Exemplos de softwares:</strong> Adobe Illustrator, CorelDRAW, Inkscape, Figma.</li>
+            <li><strong>Aplicações típicas:</strong> logotipos, ícones, ilustrações flat, interfaces digitais, materiais
+                para
+                impressão em grande escala.</li>
+        </ul>
+        <h3>Vantagens dos vetores</h3>
+        <ul>
+            <li>Escalabilidade infinita sem perda de qualidade.</li>
+            <li>Arquivos geralmente leves.</li>
+            <li>Edição simples de cores, formas e proporções.</li>
+        </ul>
+
+        <h3>Desvantagens dos vetores</h3>
+        <ul>
+            <li>Limitados para representar imagens realistas, como fotografias.</li>
+            <li>Complexidade aumenta em ilustrações muito detalhadas.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+<h2>Imagens Bitmap</h2>
+<section>
+    <figure class="w50">
+        <img src="contents/assets/bitmap.webp"
+            alt="Imagem de um patinho de borracha com zoom em uma área mostrando o aumento dos pixels">
+        <figcaption>No detalhe, a visualização dos pixels</figcaption>
+    </figure>
+    <div class="text w50">
+
+        <p>Imagens bitmap (ou raster) são formadas por uma grade de <strong>pixels</strong>.
+            Cada pixel é um quadradinho colorido, e a soma desses quadradinhos cria a imagem final.
+            A qualidade depende da quantidade de pixels — quanto maior a resolução, mais nítida a imagem.</p>
+
+        <p>Uma fotografia, por exemplo, nada mais é do que milhões de pontos de cor armazenados em um arquivo.
+            Se a imagem é ampliada além do seu limite, os pixels ficam visíveis, causando o famoso efeito de
+            <strong>pixelização</strong>.
+        </p>
+
+        <ul>
+            <li><strong>Exemplos de softwares:</strong> Adobe Photoshop, GIMP, Procreate.</li>
+            <li><strong>Aplicações típicas:</strong> fotografia, pintura digital, texturas, edição de imagens realistas.
+            </li>
+        </ul>
+        <h3>Vantagens dos bitmaps</h3>
+        <ul>
+            <li>Excelente para realismo e riqueza de detalhes.</li>
+            <li>Boa representação de texturas, sombras e gradientes complexos.</li>
+        </ul>
+
+        <h3>Desvantagens dos bitmaps</h3>
+        <ul>
+            <li>Perda de qualidade ao ampliar (pixelização).</li>
+            <li>Arquivos podem ser pesados em altas resoluções.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+<h2>Comparando Vetores e Bitmaps</h2>
+<table>
+    <tr>
+        <th>Aspecto</th>
+        <th>Vetores</th>
+        <th>Bitmaps</th>
+    </tr>
+    <tr>
+        <td>Construção</td>
+        <td>Formas matemáticas no plano cartesiano</td>
+        <td>Grade de pixels coloridos</td>
+    </tr>
+    <tr>
+        <td>Escalabilidade</td>
+        <td>Infinita, sem perda de qualidade</td>
+        <td>Limitada; ampliações causam pixelização</td>
+    </tr>
+    <tr>
+        <td>Detalhes</td>
+        <td>Perfeito para formas geométricas e traços definidos</td>
+        <td>Ideal para fotografias e imagens realistas</td>
+    </tr>
+    <tr>
+        <td>Tamanho do arquivo</td>
+        <td>Leve (dependendo da complexidade)</td>
+        <td>Pode ser pesado em alta resolução</td>
+    </tr>
+    <tr>
+        <td>Aplicações</td>
+        <td>Logos, ícones, UI, impressão grande formato</td>
+        <td>Fotos, pinturas digitais, edição de imagens</td>
+    </tr>
+</table>
+
+
+<h2>Conclusão</h2>
+<p>Vetores e bitmaps não são inimigos, mas ferramentas complementares.
+    Vetores brilham na clareza, escalabilidade e consistência;
+    bitmaps, no realismo, detalhe e emoção.
+    Um designer que domina os dois mundos sabe quando cada um é a escolha certa —
+    e isso faz toda a diferença no resultado final.</p>
