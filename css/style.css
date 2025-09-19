@@ -318,6 +318,27 @@ main {
         overflow: auto;
         padding: 0 1rem;
 
+        .card {
+            border: 1px solid var(--light-orange);
+            padding: 0 1rem;
+            border-radius: .5rem;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .g-1 {
+            gap: 1rem;
+        }
+
+        .f-wrap {
+            flex-wrap: wrap;
+        }
+
+        .f-start {
+            align-items: flex-start;
+        }
 
         h1 {
             width: 100%;
@@ -470,12 +491,7 @@ main {
 
         section {
             width: 100%;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
             padding: 1rem 0;
-
-
 
             p {
                 padding: 0;
@@ -490,7 +506,7 @@ main {
 
         figure {
             padding: 1rem;
-
+            margin-bottom: 0.5rem;
             border: 1px solid var(--mid);
             border-radius: 1rem;
             display: flex;
@@ -719,15 +735,19 @@ main {
 }
 
 .w25 {
-    width: 25%;
+    width: calc((100% - 3rem) / 4);
+}
+
+.w33 {
+    width: calc((100% - 2rem) / 3);
 }
 
 .w50 {
-    width: 50%;
+    width: calc((100% - 1rem) / 2);
 }
 
 .w75 {
-    width: 75%;
+    width: calc((100% - 3rem) / 4 * 3);
 }
 
 .w100 {
@@ -1049,13 +1069,9 @@ input:checked+.slider::before {
     }
 }
 
-@media(max-width: 768px) {
-    main {
-        width: 40rem;
-    }
-}
 
-@media(max-width: 425px) {
+
+@media(max-width:1024px) {
     header {
         height: 8rem;
         position: relative;
